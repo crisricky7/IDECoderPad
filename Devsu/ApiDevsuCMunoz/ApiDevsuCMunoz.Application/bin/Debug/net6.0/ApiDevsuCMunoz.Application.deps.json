@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ApiDevsuCMunoz.Application/1.0.0": {
+        "dependencies": {
+          "ApiDevsuCMunoz.Domain": "1.0.0"
+        },
         "runtime": {
           "ApiDevsuCMunoz.Application.dll": {}
+        }
+      },
+      "ApiDevsuCMunoz.Domain/1.0.0": {
+        "runtime": {
+          "ApiDevsuCMunoz.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ApiDevsuCMunoz.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiDevsuCMunoz.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

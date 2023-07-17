@@ -4,14 +4,14 @@
     "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\ApiDevsuCMunoz.Client.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\ApiDevsuCMunoz.Client.csproj": {
+    "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\ApiDevsuCMunoz.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\ApiDevsuCMunoz.Client.csproj",
-        "projectName": "ApiDevsuCMunoz.Client",
-        "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\ApiDevsuCMunoz.Client.csproj",
+        "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\ApiDevsuCMunoz.Application.csproj",
+        "projectName": "ApiDevsuCMunoz.Application",
+        "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\ApiDevsuCMunoz.Application.csproj",
         "packagesPath": "C:\\Users\\cmunoz\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\obj\\",
+        "outputPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj": {
-                "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj"
+              "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Domain\\ApiDevsuCMunoz.Domain.csproj": {
+                "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Domain\\ApiDevsuCMunoz.Domain.csproj"
               }
             }
           }
@@ -66,12 +66,74 @@
         }
       }
     },
-    "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj": {
+    "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\ApiDevsuCMunoz.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj",
-        "projectName": "ApiDevsuCMunoz.Data",
-        "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj",
+        "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\ApiDevsuCMunoz.Client.csproj",
+        "projectName": "ApiDevsuCMunoz.Client",
+        "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\ApiDevsuCMunoz.Client.csproj",
+        "packagesPath": "C:\\Users\\cmunoz\\.nuget\\packages\\",
+        "outputPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cmunoz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj": {
+                "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj",
+        "projectName": "ApiDevsuCMunoz.Infrastructure",
+        "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\cmunoz\\.nuget\\packages\\",
         "outputPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -94,8 +156,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Domain\\ApiDevsuCMunoz.Domain.csproj": {
-                "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Domain\\ApiDevsuCMunoz.Domain.csproj"
+              "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\ApiDevsuCMunoz.Application.csproj": {
+                "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\ApiDevsuCMunoz.Application.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X+BUJSsqDsAnRxkiNA22EiwnSAAlSAJZFwgfTWrXoBwQAOChPsDPuICZN5ONZPiE3rlNpeP0Jl5xYKuN5XZ1KQ==",
+  "dgSpecHash": "Q8bWUHuURiXJRe0ISgggwoDWeieswHjq7JjMLx78T2IGLQoC2/6Go5IPr+nmZXcRlfKLpaLSm2jFnJZgBIUGHg==",
   "success": true,
-  "projectFilePath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj",
+  "projectFilePath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cmunoz\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\cmunoz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

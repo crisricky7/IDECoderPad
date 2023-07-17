@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiDevsuCMunoz.Domain\ApiDevsuCMunoz.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Behaviours\" />
+    <Folder Include="Contracts\Persistence\" />
+    <Folder Include="Features\" />
+  </ItemGroup>
+
 </Project>

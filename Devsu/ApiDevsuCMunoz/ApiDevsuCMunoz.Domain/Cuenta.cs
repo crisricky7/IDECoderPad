@@ -11,5 +11,6 @@ namespace ApiDevsuCMunoz.Domain
         public long? ClienteId { get; set; }
         public string? Estado { get; set; }
         public virtual Cliente? Cliente { get; set; }
+        public virtual ICollection<Movimiento>? Movimientos { get; set; }
     }
 }

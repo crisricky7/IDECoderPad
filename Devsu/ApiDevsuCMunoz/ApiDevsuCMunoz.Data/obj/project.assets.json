@@ -853,6 +853,19 @@
           }
         }
       },
+      "ApiDevsuCMunoz.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ApiDevsuCMunoz.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ApiDevsuCMunoz.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiDevsuCMunoz.Application.dll": {}
+        }
+      },
       "ApiDevsuCMunoz.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3032,6 +3045,11 @@
         "version.txt"
       ]
     },
+    "ApiDevsuCMunoz.Application/1.0.0": {
+      "type": "project",
+      "path": "../ApiDevsuCMunoz.Application/ApiDevsuCMunoz.Application.csproj",
+      "msbuildProject": "../ApiDevsuCMunoz.Application/ApiDevsuCMunoz.Application.csproj"
+    },
     "ApiDevsuCMunoz.Domain/1.0.0": {
       "type": "project",
       "path": "../ApiDevsuCMunoz.Domain/ApiDevsuCMunoz.Domain.csproj",
@@ -3040,7 +3058,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ApiDevsuCMunoz.Domain >= 1.0.0",
+      "ApiDevsuCMunoz.Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9"
     ]
   },
@@ -3051,9 +3069,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj",
-      "projectName": "ApiDevsuCMunoz.Data",
-      "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj",
+      "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj",
+      "projectName": "ApiDevsuCMunoz.Infrastructure",
+      "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\cmunoz\\.nuget\\packages\\",
       "outputPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -3076,8 +3094,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Domain\\ApiDevsuCMunoz.Domain.csproj": {
-              "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Domain\\ApiDevsuCMunoz.Domain.csproj"
+            "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\ApiDevsuCMunoz.Application.csproj": {
+              "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Application\\ApiDevsuCMunoz.Application.csproj"
             }
           }
         }

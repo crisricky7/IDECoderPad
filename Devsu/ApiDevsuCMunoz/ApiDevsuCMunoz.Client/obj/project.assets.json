@@ -853,18 +853,17 @@
           }
         }
       },
-      "ApiDevsuCMunoz.Data/1.0.0": {
+      "ApiDevsuCMunoz.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ApiDevsuCMunoz.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
+          "ApiDevsuCMunoz.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/ApiDevsuCMunoz.Data.dll": {}
+          "bin/placeholder/ApiDevsuCMunoz.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ApiDevsuCMunoz.Data.dll": {}
+          "bin/placeholder/ApiDevsuCMunoz.Application.dll": {}
         }
       },
       "ApiDevsuCMunoz.Domain/1.0.0": {
@@ -875,6 +874,20 @@
         },
         "runtime": {
           "bin/placeholder/ApiDevsuCMunoz.Domain.dll": {}
+        }
+      },
+      "ApiDevsuCMunoz.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ApiDevsuCMunoz.Application": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
+        },
+        "compile": {
+          "bin/placeholder/ApiDevsuCMunoz.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiDevsuCMunoz.Infrastructure.dll": {}
         }
       }
     }
@@ -3046,20 +3059,25 @@
         "version.txt"
       ]
     },
-    "ApiDevsuCMunoz.Data/1.0.0": {
+    "ApiDevsuCMunoz.Application/1.0.0": {
       "type": "project",
-      "path": "../ApiDevsuCMunoz.Data/ApiDevsuCMunoz.Data.csproj",
-      "msbuildProject": "../ApiDevsuCMunoz.Data/ApiDevsuCMunoz.Data.csproj"
+      "path": "../ApiDevsuCMunoz.Application/ApiDevsuCMunoz.Application.csproj",
+      "msbuildProject": "../ApiDevsuCMunoz.Application/ApiDevsuCMunoz.Application.csproj"
     },
     "ApiDevsuCMunoz.Domain/1.0.0": {
       "type": "project",
       "path": "../ApiDevsuCMunoz.Domain/ApiDevsuCMunoz.Domain.csproj",
       "msbuildProject": "../ApiDevsuCMunoz.Domain/ApiDevsuCMunoz.Domain.csproj"
+    },
+    "ApiDevsuCMunoz.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ApiDevsuCMunoz.Data/ApiDevsuCMunoz.Infrastructure.csproj",
+      "msbuildProject": "../ApiDevsuCMunoz.Data/ApiDevsuCMunoz.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ApiDevsuCMunoz.Data >= 1.0.0"
+      "ApiDevsuCMunoz.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3094,8 +3112,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj": {
-              "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Data.csproj"
+            "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj": {
+              "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Data\\ApiDevsuCMunoz.Infrastructure.csproj"
             }
           }
         }

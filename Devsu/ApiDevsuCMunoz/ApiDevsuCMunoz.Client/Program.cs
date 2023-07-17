@@ -1,7 +1,26 @@
 ﻿using ApiDevsuCMunoz.Data;
 using ApiDevsuCMunoz.Domain;
+using Microsoft.EntityFrameworkCore;
 
 ApiDevsuCMunozDbContext dbContext = new();
+await QueryFilter();
+//QueryCliente();
+
+async Task QueryMethods() { 
+    var clientes = await dbContext!.Clientes!.ToListAsync();
+
+}
+
+async Task QueryFilter() {
+    var valorResult="Jose";
+    var clientes = await dbContext!.Clientes!.Where(x => x.Id == 3).ToListAsync();
+
+    foreach (var cliente in clientes) { 
+        Console.WriteLine($"{cliente.Id}-{cliente.Nombre}-{cliente.Telefono}");
+    }
+
+    var clientesPart = await dbContext!.Clientes!.Where(x => EF.Functions.Like(x.Nombre, $"%{valorResult}%")).ToListAsync();
+}
 
 /*Cliente cliente = new() {
     Nombre = "Jose Lema",
@@ -29,14 +48,21 @@ var cuentas = new List<Cuenta> {
 };
 await dbContext.AddRangeAsync(cuentas);
 await dbContext.SaveChangesAsync();*/
-
+/*
 var movimientos = new List<Movimiento> { 
     new Movimiento{
         Tipo = "Debito",
         Valor = -575,
         Saldo = 2000,
-        NumCuenta = 478758
+        CuentaNumero = 478758
     },
 };
 await dbContext.AddRangeAsync(movimientos);
-await dbContext.SaveChangesAsync();
+await dbContext.SaveChangesAsync();*/
+
+void QueryCliente() { 
+    var clientes = dbContext!.Clientes!.ToList();
+    foreach (var cliente in clientes) { 
+        Console.WriteLine($"{cliente.Id}-{cliente.Nombre}-{cliente.Telefono}");
+    }
+}

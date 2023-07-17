@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApiDevsuCMunoz.Domain\ApiDevsuCMunoz.Domain.csproj" />
+    <ProjectReference Include="..\ApiDevsuCMunoz.Application\ApiDevsuCMunoz.Application.csproj" />
   </ItemGroup>
 
 </Project>

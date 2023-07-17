@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ApiDevsuCMunoz.Client/1.0.0": {
         "dependencies": {
-          "ApiDevsuCMunoz.Data": "1.0.0"
+          "ApiDevsuCMunoz.Infrastructure": "1.0.0"
         },
         "runtime": {
           "ApiDevsuCMunoz.Client.dll": {}
@@ -610,18 +610,26 @@
           }
         }
       },
-      "ApiDevsuCMunoz.Data/1.0.0": {
+      "ApiDevsuCMunoz.Application/1.0.0": {
         "dependencies": {
-          "ApiDevsuCMunoz.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
+          "ApiDevsuCMunoz.Domain": "1.0.0"
         },
         "runtime": {
-          "ApiDevsuCMunoz.Data.dll": {}
+          "ApiDevsuCMunoz.Application.dll": {}
         }
       },
       "ApiDevsuCMunoz.Domain/1.0.0": {
         "runtime": {
           "ApiDevsuCMunoz.Domain.dll": {}
+        }
+      },
+      "ApiDevsuCMunoz.Infrastructure/1.0.0": {
+        "dependencies": {
+          "ApiDevsuCMunoz.Application": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
+        },
+        "runtime": {
+          "ApiDevsuCMunoz.Infrastructure.dll": {}
         }
       }
     }
@@ -1066,12 +1074,17 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "ApiDevsuCMunoz.Data/1.0.0": {
+    "ApiDevsuCMunoz.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "ApiDevsuCMunoz.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ApiDevsuCMunoz.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

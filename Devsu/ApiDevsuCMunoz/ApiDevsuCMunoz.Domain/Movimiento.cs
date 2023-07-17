@@ -6,7 +6,7 @@
         public string? Tipo { get; set; }
         public double Valor { get; set; }
         public double Saldo { get; set; }
-        public long? NumCuenta { get; set; }
+        public long? CuentaNumero { get; set; }
         public virtual Cuenta? Cuenta { get; set; }
 
     }

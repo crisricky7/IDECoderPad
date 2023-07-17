@@ -10,3 +10,6 @@ D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Application\obj\Debug\net
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Application\obj\Debug\net6.0\refint\ApiDevsuCMunoz.Application.dll
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Application\obj\Debug\net6.0\ApiDevsuCMunoz.Application.pdb
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Application\obj\Debug\net6.0\ref\ApiDevsuCMunoz.Application.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Application\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Application\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Application\obj\Debug\net6.0\ApiDevsuCMunoz.Application.csproj.CopyComplete
