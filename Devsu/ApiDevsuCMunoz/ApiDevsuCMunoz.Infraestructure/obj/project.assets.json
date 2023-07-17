@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Infraestructure\\ApiDevsuCMunoz.Infraestructure.csproj",
-      "projectName": "ApiDevsuCMunoz.Infraestructure",
-      "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Infraestructure\\ApiDevsuCMunoz.Infraestructure.csproj",
+      "projectUniqueName": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Infraestructure\\ApiDevsuCMunoz.Infrastructure.csproj",
+      "projectName": "ApiDevsuCMunoz.Infrastructure",
+      "projectPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Infraestructure\\ApiDevsuCMunoz.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\cmunoz\\.nuget\\packages\\",
       "outputPath": "D:\\GIT\\IDECoderPad\\Devsu\\ApiDevsuCMunoz\\ApiDevsuCMunoz.Infraestructure\\obj\\",
       "projectStyle": "PackageReference",
