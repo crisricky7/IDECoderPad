@@ -67,3 +67,9 @@ D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\A
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.pdb
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\ApiDevsuCMunoz.Application.dll
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\ApiDevsuCMunoz.Application.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\FluentValidation.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\MediatR.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\AutoMapper.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Client\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

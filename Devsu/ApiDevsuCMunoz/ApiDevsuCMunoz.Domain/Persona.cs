@@ -1,7 +1,8 @@
-﻿namespace ApiDevsuCMunoz.Domain
+﻿using ApiDevsuCMunoz.Domain.Common;
+
+namespace ApiDevsuCMunoz.Domain
 {
-    public class Persona
-    {
+    public class Persona : BaseDomainModel{
         public string? Nombre { get; set; }
         public string? Genero { get; set; }
         public int Edad { get; set; }

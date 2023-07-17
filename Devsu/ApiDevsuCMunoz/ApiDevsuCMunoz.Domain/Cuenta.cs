@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ApiDevsuCMunoz.Domain.Common;
+using System.ComponentModel.DataAnnotations;
 
 namespace ApiDevsuCMunoz.Domain
 {
-    public class Cuenta
-    {
+    public class Cuenta : BaseDomainModel{
         [Key]
         public long Numero { get; set; }
         public string? Tipo { get; set; }

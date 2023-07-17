@@ -1,7 +1,8 @@
-﻿namespace ApiDevsuCMunoz.Domain
+﻿using ApiDevsuCMunoz.Domain.Common;
+
+namespace ApiDevsuCMunoz.Domain
 {
-    public class Movimiento
-    {
+    public class Movimiento : BaseDomainModel{
         public long Id { get; set; }
         public string? Tipo { get; set; }
         public double Valor { get; set; }
