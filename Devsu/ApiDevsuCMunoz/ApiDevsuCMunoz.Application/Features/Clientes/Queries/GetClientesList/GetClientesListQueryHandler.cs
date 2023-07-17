@@ -18,8 +18,7 @@ namespace ApiDevsuCMunoz.Application.Features.Clientes.Queries.GetClientesList
 
         public async Task<List<ClientesVM>> Handle(GetClientesListQuery request, CancellationToken cancellationToken)
         {
-            var clienteList = await _clienteRepository.GetClienteByIdentificacion(request._Identificacion);
-
+            var clienteList = await _clienteRepository.GetByIdAsync(request.Id);
             return _mapper.Map<List<ClientesVM>>(clienteList);
         }
     }

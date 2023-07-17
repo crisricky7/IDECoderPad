@@ -21,7 +21,7 @@ namespace ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente
         }
         public async Task<Unit> Handle(UpdateClienteCommand request, CancellationToken cancellationToken)
         {
-            var clienteToUpdate = await _clienteRepository.GetClienteByIdentificacion(request.Identificacion);
+            var clienteToUpdate = await _clienteRepository.GetByIdAsync(request.Id);
             if (clienteToUpdate == null)
             {
                 _logger.LogError($"No se encontro el cliente identificacion {request.Identificacion}");

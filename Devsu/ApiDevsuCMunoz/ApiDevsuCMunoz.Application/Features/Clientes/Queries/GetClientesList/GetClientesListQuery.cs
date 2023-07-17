@@ -5,10 +5,10 @@ namespace ApiDevsuCMunoz.Application.Features.Clientes.Queries.GetClientesList
 {
     public class GetClientesListQuery : IRequest<List<ClientesVM>>
     {
-        public string _Identificacion { get; set; } = String.Empty;
+        public long Id { get; set; }
 
-        public GetClientesListQuery(string identificacion) { 
-            _Identificacion = identificacion ?? throw new ArgumentNullException(nameof(identificacion));
+        public GetClientesListQuery(long id) {
+            Id = id;
         }
     }
 }

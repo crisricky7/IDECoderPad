@@ -1,5 +1,5 @@
-﻿using ApiDevsuCMunoz.Data;
-using ApiDevsuCMunoz.Domain;
+﻿using ApiDevsuCMunoz.Domain;
+using ApiDevsuCMunoz.Infrestructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 ApiDevsuCMunozDbContext dbContext = new();
