@@ -1,7 +1,9 @@
 ﻿using ApiDevsuCMunoz.Application.Contracts.Persistence;
 using ApiDevsuCMunoz.Application.Features.Movimientos.VModels;
+using ApiDevsuCMunoz.Domain;
 using AutoMapper;
 using MediatR;
+using System.Collections.Generic;
 
 namespace ApiDevsuCMunoz.Application.Features.Movimientos.Queries.GetMovimientosList
 {
@@ -18,9 +20,14 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Queries.GetMovimientos
 
         public async Task<List<MovimientosVM>> Handle(GetMovimientosListQuery request, CancellationToken cancellationToken)
         {
-            var movimientoList = await _movimientoRepository.GetByIdAsync(request._id);
+            var movimientoList = _movimientoRepository.GetAllMovimientos(request._CuentaNumero);
 
-            return _mapper.Map<List<MovimientosVM>>(movimientoList);
+            List<Movimiento> movimiento = new List<Movimiento>();
+
+            foreach (var movimientoVM in movimientoList)
+            movimiento.Add(movimientoVM);
+
+            return _mapper.Map<List<MovimientosVM>>(movimiento);
         }
     }
 }

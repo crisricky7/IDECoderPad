@@ -5,8 +5,8 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Commands.CreateMovimie
     public class CreateMovimientoCommand : IRequest<long>
     {
         public string Tipo { get; set; } = string.Empty;
-        public double Valor { get; set; }
-        public double Saldo { get; set; }
+        public decimal Valor { get; set; }
+        public decimal Saldo { get; set; }
         public long? CuentaNumero { get; set; }
     }
 }

@@ -5,11 +5,11 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Queries.GetMovimientos
 {
     public class GetMovimientosListQuery : IRequest<List<MovimientosVM>>
     {
-        public long _id  { get; set; }
+        public long _CuentaNumero  { get; set; }
 
-        public GetMovimientosListQuery(long id)
+        public GetMovimientosListQuery(long CuentaNumero)
         {
-            _id = id;
+            _CuentaNumero = CuentaNumero;
         }
     }
 }

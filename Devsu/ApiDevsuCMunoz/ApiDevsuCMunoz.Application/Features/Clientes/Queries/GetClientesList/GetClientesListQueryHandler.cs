@@ -5,7 +5,7 @@ using MediatR;
 
 namespace ApiDevsuCMunoz.Application.Features.Clientes.Queries.GetClientesList
 {
-    public class GetClientesListQueryHandler : IRequestHandler<GetClientesListQuery, List<ClientesVM>>
+    public class GetClientesListQueryHandler : IRequestHandler<GetClientesListQuery, ClientesVM>
     {
         private readonly IClienteRepository _clienteRepository;
         private readonly IMapper _mapper;
@@ -16,10 +16,10 @@ namespace ApiDevsuCMunoz.Application.Features.Clientes.Queries.GetClientesList
             _mapper = mapper;
         }
 
-        public async Task<List<ClientesVM>> Handle(GetClientesListQuery request, CancellationToken cancellationToken)
+        public async Task<ClientesVM> Handle(GetClientesListQuery request, CancellationToken cancellationToken)
         {
             var clienteList = await _clienteRepository.GetByIdAsync(request.Id);
-            return _mapper.Map<List<ClientesVM>>(clienteList);
+            return _mapper.Map<ClientesVM>(clienteList);
         }
     }
 }

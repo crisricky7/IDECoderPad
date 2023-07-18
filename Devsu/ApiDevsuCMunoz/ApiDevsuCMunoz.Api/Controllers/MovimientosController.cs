@@ -19,51 +19,72 @@ namespace ApiDevsuCMunoz.Api.Controllers
         {
             _mediator = mediator;
         }
-        // GET api/<CuentaController>/5
-        [HttpGet("{Numero}", Name = "GetMovimiento")]
+        [HttpGet("{CuentaNumero}", Name = "GetMovimiento")]
         [ProducesResponseType(typeof(IEnumerable<MovimientosVM>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<IEnumerable<MovimientosVM>>> GetMovimientosID(long id)
+        public async Task<ActionResult<IEnumerable<MovimientosVM>>> GetMovimientosID(long CuentaNumero)
         {
-            var query = new GetMovimientosListQuery(id);//falta
-            var videos = await _mediator.Send(query);
-            return Ok(videos);
+            try
+            { 
+                var query = new GetMovimientosListQuery(CuentaNumero);
+                var movimientos = await _mediator.Send(query);
+                return Ok(movimientos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
-        // POST api/<CuentaController>
         [HttpPost(Name = "CreateMovimiento")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<long>> CreateCuenta([FromBody] CreateMovimientoCommand command)
         {
-            return await _mediator.Send(command);
+            try
+            { 
+                return await _mediator.Send(command);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
-        // PUT api/<CuentaController>/5
         [HttpPut(Name = "UpdateMovimiento")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public async Task<ActionResult<long>> UpdateMovimiento([FromBody] UpdateMovimientoCommand command)
         {
-            await _mediator.Send(command);
-
-            return NoContent();
+            try
+            {
+                await _mediator.Send(command);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
-        // DELETE api/<CuentaController>/5
         [HttpDelete("{numero}", Name = "DeleteMovimiento")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public async Task<ActionResult> DeleteMovimiento(long id)
         {
-            var command = new DeleteMovimientoCommand()
+            try 
+            { 
+                var command = new DeleteMovimientoCommand()
+                {
+                    Id = id
+                };
+                await _mediator.Send(command);
+                return NoContent();
+            }
+            catch (Exception ex)
             {
-                Id = id
-            };
-
-            await _mediator.Send(command);
-
-            return NoContent();
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
     }
 }

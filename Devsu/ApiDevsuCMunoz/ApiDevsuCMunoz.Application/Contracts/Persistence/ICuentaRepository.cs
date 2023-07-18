@@ -7,5 +7,6 @@ namespace ApiDevsuCMunoz.Application.Contracts.Persistence
     {
         Task<List<Cuenta>> GetClienteByCuentas(string identificacion);
         Task<InformeCuenta> GetInformeCuentas(string identificacion);
+        public bool ValidaMovimientosAsync(Cuenta entity);
     }
 }

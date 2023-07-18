@@ -28,8 +28,24 @@ namespace ApiDevsuCMunoz.Application.Features.Cuentas.Commands.DeleteCuentas
                 _logger.LogError($"No se encontro la cuenta con el número {request.Numero}");
                 throw new NotFoundException(nameof(Cuenta), request.Numero);
             }
-            await _cuentaRepository.DeleteAsync(cuentaToDelete);
-            _logger.LogInformation($"La operación fue exitosa eliminando la cuenta {request.Numero}");
+            try
+            {
+                var validaMov = _cuentaRepository.ValidaMovimientosAsync(cuentaToDelete);
+                if (!validaMov){
+                    await _cuentaRepository.DeleteAsync(cuentaToDelete);
+                    _logger.LogInformation($"La operación fue exitosa eliminando la cuenta {request.Numero}");
+                }
+                else {
+                    throw new BadRequestException("No se pudo eliminar la cuenta, tiene movimientos");
+                    
+                };
+                await _cuentaRepository.DeleteAsync(cuentaToDelete);
+                _logger.LogInformation($"La operación fue exitosa eliminando la cuenta {request.Numero}");
+            }
+            catch (Exception ex) {
+                _logger.LogInformation($"Error al eliminar la cuenta {request.Numero}. Msg:"+ex.Message);
+                throw new BadRequestException("No se pudo eliminar la cuenta. Error:"+ex.Message);
+            }
             return Unit.Value;
         }
     }

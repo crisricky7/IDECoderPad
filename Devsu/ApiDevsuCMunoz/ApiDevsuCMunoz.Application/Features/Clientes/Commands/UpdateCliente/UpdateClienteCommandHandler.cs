@@ -28,6 +28,7 @@ namespace ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente
                 throw new NotFoundException(nameof(Cliente), request.Identificacion);
             }
             _mapper.Map(request, clienteToUpdate, typeof(UpdateClienteCommand), typeof(Cliente));
+            
             await _clienteRepository.UpdateAsync(clienteToUpdate);
             _logger.LogInformation($"La operación fue exitosa actualizando el cliente {request.Identificacion}");
             return Unit.Value;

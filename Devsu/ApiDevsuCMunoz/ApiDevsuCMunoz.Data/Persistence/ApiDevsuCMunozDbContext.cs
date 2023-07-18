@@ -35,8 +35,8 @@ namespace ApiDevsuCMunoz.Infrestructure.Persistence
                 .OnDelete(DeleteBehavior.Restrict);
         }
 
-        public List<Cliente>? Clientes { get; set; }
-        public List<Cuenta>? Cuentas { get; set; }
-        public List<Movimiento>? Movimientos { get; set; }
+        public DbSet<Cliente>? Clientes { get; set; }
+        public DbSet<Cuenta>? Cuentas { get; set; }
+        public DbSet<Movimiento>? Movimientos { get; set; }
     }
 }

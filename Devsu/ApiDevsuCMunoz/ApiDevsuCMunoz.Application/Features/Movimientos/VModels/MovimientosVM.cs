@@ -10,8 +10,8 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.VModels
     {
         public long Id { get; set; }
         public string? Tipo { get; set; }
-        public double Valor { get; set; }
-        public double Saldo { get; set; }
+        public decimal Valor { get; set; }
+        public decimal Saldo { get; set; }
         public long? CuentaNumero { get; set; }
     }
 }

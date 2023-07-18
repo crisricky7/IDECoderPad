@@ -1,3 +1,9 @@
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.csproj.AssemblyReference.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.AssemblyInfoInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.AssemblyInfo.cs
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.csproj.CoreCompileInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\bin\Debug\net6.0\appsettings.Development.json
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\bin\Debug\net6.0\appsettings.json
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\bin\Debug\net6.0\ApiDevsuCMunoz.Api.exe
@@ -68,13 +74,6 @@ D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\bin\Debug\net6.0\ApiD
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\bin\Debug\net6.0\ApiDevsuCMunoz.Application.pdb
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\bin\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.pdb
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.pdb
-D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.csproj.AssemblyReference.cache
-D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.AssemblyInfoInputs.cache
-D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.AssemblyInfo.cs
-D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.csproj.CoreCompileInputs.cache
-D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\staticwebassets.build.json
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\staticwebassets.development.json
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\scopedcss\bundle\ApiDevsuCMunoz.Api.styles.css
@@ -84,3 +83,4 @@ D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\refi
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.pdb
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.genruntimeconfig.cache
 D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ref\ApiDevsuCMunoz.Api.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Api\obj\Debug\net6.0\ApiDevsuCMunoz.Api.MvcApplicationPartsAssemblyInfo.cs

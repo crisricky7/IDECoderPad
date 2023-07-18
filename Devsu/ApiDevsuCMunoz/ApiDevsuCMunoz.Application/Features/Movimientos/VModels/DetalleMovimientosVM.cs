@@ -10,7 +10,7 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.VModels
     {
         public DateTime Fecha { get; set; }
         public string Tipo { get; set; } = string.Empty;
-        public double Valor { get; set; }
-        public double Saldo { get; set; }
+        public decimal Valor { get; set; }
+        public decimal Saldo { get; set; }
     }
 }

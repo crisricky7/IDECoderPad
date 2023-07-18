@@ -20,13 +20,20 @@ namespace ApiDevsuCMunoz.Api.Controllers
             _mediator = mediator;
         }
         // GET api/<CuentaController>/5
-        [HttpGet("{Numero}", Name = "GetNumCuentas")]
+        [HttpGet("{numero}", Name = "GetNumCuentas")]
         [ProducesResponseType(typeof(IEnumerable<CuentasVM>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<CuentasVM>>> GetCuentasCuentaID(long numero)
         {
-            var query = new GetCuentasListQuery(numero);//falta
-            var videos = await _mediator.Send(query);
-            return Ok(videos);
+            try
+            {
+                var query = new GetCuentasListQuery(numero);//falta
+                var cuentas = await _mediator.Send(query);
+                return Ok(cuentas);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
         // POST api/<CuentaController>
@@ -34,7 +41,14 @@ namespace ApiDevsuCMunoz.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<long>> CreateCuenta([FromBody] CreateCuentasCommand command)
         {
-            return await _mediator.Send(command);
+            try 
+            {
+                return await _mediator.Send(command);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
         // PUT api/<CuentaController>/5
@@ -44,9 +58,15 @@ namespace ApiDevsuCMunoz.Api.Controllers
         [ProducesDefaultResponseType]
         public async Task<ActionResult<long>> UpdateCuenta([FromBody] UpdateCuentasCommand command)
         {
-            await _mediator.Send(command);
-
-            return NoContent();
+            try
+            {    
+                await _mediator.Send(command);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
         // DELETE api/<CuentaController>/5
@@ -56,14 +76,22 @@ namespace ApiDevsuCMunoz.Api.Controllers
         [ProducesDefaultResponseType]
         public async Task<ActionResult> DeleteCuenta(long numero)
         {
-            var command = new DeleteCuentasCommand()
+            try
             {
-                Numero = numero
-            };
+                var command = new DeleteCuentasCommand()
+                {
+                    Numero = numero
+                };
 
-            await _mediator.Send(command);
+                await _mediator.Send(command);
 
-            return NoContent();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
+
         }
     }
 }

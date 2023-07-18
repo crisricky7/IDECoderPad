@@ -6,8 +6,8 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Commands.UpdateMovimie
     {
         public long Id { get; set; }
         public string Tipo { get; set; } = string.Empty;
-        public double Valor { get; set; }
-        public double Saldo { get; set; }
+        public decimal Valor { get; set; }
+        public decimal Saldo { get; set; }
         public long? CuentaNumero { get; set; }
     }
 }

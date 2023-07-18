@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ApiDevsuCMunoz.Application.Features.Cuentas.Queries.GetCuentasList
 {
-    public class GetCuentasListQuery : IRequest<List<CuentasVM>>
+    public class GetCuentasListQuery : IRequest<CuentasVM>
     {
         public long _Numero { get; set; }
 

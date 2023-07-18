@@ -20,50 +20,71 @@ namespace ApiDevsuCMunoz.Api.Controllers
             _mediator = mediator;
         }
 
-        // GET api/<ClienteController>/5
         [HttpGet("{id}", Name = "GetClienteId")]
         [ProducesResponseType(typeof(IEnumerable<ClientesVM>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<IEnumerable<ClientesVM>>> GetClienteByIdentificacion(long id)
+        public async Task<ActionResult<IEnumerable<ClientesVM>>> GetClienteById(long id)
         {
-            var query = new GetClientesListQuery(id);
-            var cliente = await _mediator.Send(query);
-            return Ok(cliente);
+            try 
+            {
+                var query = new GetClientesListQuery(id);
+                var cliente = await _mediator.Send(query);
+                return Ok(cliente);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
-        // POST api/<ClienteController>
         [HttpPost(Name = "CreateCliente")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<long>> CreateCliente([FromBody] CreateClienteCommand command)
         {
-            return await _mediator.Send(command);
+            try 
+            { 
+                return await _mediator.Send(command);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
-        // PUT api/<ClienteController>/5
         [HttpPut(Name ="UpdateCliente")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public async Task<ActionResult<long>> UpdateCliente([FromBody] UpdateClienteCommand command)
         {
-            await _mediator.Send(command);
-
-            return NoContent();
+            try 
+            { 
+                await _mediator.Send(command);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
-        // DELETE api/<ClienteController>/5
         [HttpDelete("{id}", Name = "DeleteCliente")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public async Task<ActionResult> DeleteCliente(long id)
         {
-            var command = new DeleteClienteCommand() { 
-                Id = id
-            };
-            
-            await _mediator.Send(command);
-
-            return NoContent();
+            try
+            { 
+                var command = new DeleteClienteCommand() { 
+                    Id = id
+                };
+                await _mediator.Send(command);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
     }
 }

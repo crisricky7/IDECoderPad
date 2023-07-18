@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ApiDevsuCMunoz.Application.Features.Clientes.Queries.GetClientesList
 {
-    public class GetClientesListQuery : IRequest<List<ClientesVM>>
+    public class GetClientesListQuery : IRequest<ClientesVM>
     {
         public long Id { get; set; }
 

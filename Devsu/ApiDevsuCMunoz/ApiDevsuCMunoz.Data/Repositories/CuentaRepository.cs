@@ -23,5 +23,10 @@ namespace ApiDevsuCMunoz.Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
+        public bool ValidaMovimientosAsync(Cuenta entity) {
+
+             return _context!.Movimientos!.Where(x => x.CuentaNumero == entity.Numero).Count()>0;
+            
+        }
     }
 }

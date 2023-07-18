@@ -13,17 +13,22 @@ namespace ApiDevsuCMunoz.Infrastructure.Repositories
             _context = context;
         }
 
-        public Task<ResultadosAPI> RegistraTransaccion(long numCuenta, string tipo, double valor)
+        public List<Movimiento> GetAllMovimientos(long numCuenta)
+        {
+            return _context!.Movimientos!.Where(x => x.CuentaNumero == numCuenta).ToList();
+        }
+
+        public Task<ResultadosAPI> RegistraTransaccion(long numCuenta, string tipo, decimal valor)
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultadosAPI> ValidarCupoDiario(long numCuenta, double valor)
+        public Task<ResultadosAPI> ValidarCupoDiario(long numCuenta, decimal valor)
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultadosAPI> ValidarSaldo(long numCuenta, double valor)
+        public Task<ResultadosAPI> ValidarSaldo(long numCuenta, decimal valor)
         {
             throw new NotImplementedException();
         }
