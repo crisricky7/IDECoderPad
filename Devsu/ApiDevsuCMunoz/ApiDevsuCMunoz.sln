@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDevsuCMunoz.Api", "ApiDevsuCMunoz\ApiDevsuCMunoz.Api.csproj", "{D66A5E3A-4D97-4677-960E-54E418A36937}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EE7A06A4-E23C-40CF-B607-3C4833A76B8E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{ECB334BA-0BD5-47E8-B92F-E93E26ADD04C}"
@@ -13,17 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{94995E9C-8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0B31CB6F-77F8-4F83-A064-92DDEE741FC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDevsuCMunoz.Domain", "ApiDevsuCMunoz.Domain\ApiDevsuCMunoz.Domain.csproj", "{763B22A5-B350-419E-8F4E-29831686E7F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDevsuCMunoz.Domain", "ApiDevsuCMunoz.Domain\ApiDevsuCMunoz.Domain.csproj", "{763B22A5-B350-419E-8F4E-29831686E7F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDevsuCMunoz.Application", "ApiDevsuCMunoz.Application\ApiDevsuCMunoz.Application.csproj", "{6C4C9DC7-6325-405C-A5CE-3FA514CC1BBB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDevsuCMunoz.Infrastructure", "ApiDevsuCMunoz.Infraestructure\ApiDevsuCMunoz.Infrastructure.csproj", "{67682BE1-CF9F-4412-A665-CF30CDA1CD8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDevsuCMunoz.Application", "ApiDevsuCMunoz.Application\ApiDevsuCMunoz.Application.csproj", "{6C4C9DC7-6325-405C-A5CE-3FA514CC1BBB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{C2269828-5E12-4A72-81D3-7171FCF18FE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDevsuCMunoz.Data", "ApiDevsuCMunoz.Data\ApiDevsuCMunoz.Data.csproj", "{5C9762F6-6F89-4CA4-BF64-61527EDF6544}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDevsuCMunoz.Infrastructure", "ApiDevsuCMunoz.Data\ApiDevsuCMunoz.Infrastructure.csproj", "{5C9762F6-6F89-4CA4-BF64-61527EDF6544}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDevsuCMunoz.Client", "ApiDevsuCMunoz.Client\ApiDevsuCMunoz.Client.csproj", "{3FCBC919-489D-459E-BDBD-0709914F82EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDevsuCMunoz.Api", "ApiDevsuCMunoz.Api\ApiDevsuCMunoz.Api.csproj", "{828B4250-9C0F-4AE2-B18C-FA36AC5D4FD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D66A5E3A-4D97-4677-960E-54E418A36937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D66A5E3A-4D97-4677-960E-54E418A36937}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D66A5E3A-4D97-4677-960E-54E418A36937}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D66A5E3A-4D97-4677-960E-54E418A36937}.Release|Any CPU.Build.0 = Release|Any CPU
 		{763B22A5-B350-419E-8F4E-29831686E7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{763B22A5-B350-419E-8F4E-29831686E7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{763B22A5-B350-419E-8F4E-29831686E7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,32 +35,26 @@ Global
 		{6C4C9DC7-6325-405C-A5CE-3FA514CC1BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4C9DC7-6325-405C-A5CE-3FA514CC1BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4C9DC7-6325-405C-A5CE-3FA514CC1BBB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67682BE1-CF9F-4412-A665-CF30CDA1CD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67682BE1-CF9F-4412-A665-CF30CDA1CD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67682BE1-CF9F-4412-A665-CF30CDA1CD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67682BE1-CF9F-4412-A665-CF30CDA1CD8A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C9762F6-6F89-4CA4-BF64-61527EDF6544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C9762F6-6F89-4CA4-BF64-61527EDF6544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9762F6-6F89-4CA4-BF64-61527EDF6544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C9762F6-6F89-4CA4-BF64-61527EDF6544}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FCBC919-489D-459E-BDBD-0709914F82EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FCBC919-489D-459E-BDBD-0709914F82EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FCBC919-489D-459E-BDBD-0709914F82EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FCBC919-489D-459E-BDBD-0709914F82EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828B4250-9C0F-4AE2-B18C-FA36AC5D4FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828B4250-9C0F-4AE2-B18C-FA36AC5D4FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828B4250-9C0F-4AE2-B18C-FA36AC5D4FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828B4250-9C0F-4AE2-B18C-FA36AC5D4FD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D66A5E3A-4D97-4677-960E-54E418A36937} = {ECB334BA-0BD5-47E8-B92F-E93E26ADD04C}
 		{ECB334BA-0BD5-47E8-B92F-E93E26ADD04C} = {EE7A06A4-E23C-40CF-B607-3C4833A76B8E}
 		{94995E9C-8652-4E82-AF35-881A841D188E} = {EE7A06A4-E23C-40CF-B607-3C4833A76B8E}
 		{0B31CB6F-77F8-4F83-A064-92DDEE741FC4} = {EE7A06A4-E23C-40CF-B607-3C4833A76B8E}
 		{763B22A5-B350-419E-8F4E-29831686E7F3} = {94995E9C-8652-4E82-AF35-881A841D188E}
 		{6C4C9DC7-6325-405C-A5CE-3FA514CC1BBB} = {94995E9C-8652-4E82-AF35-881A841D188E}
-		{67682BE1-CF9F-4412-A665-CF30CDA1CD8A} = {0B31CB6F-77F8-4F83-A064-92DDEE741FC4}
 		{5C9762F6-6F89-4CA4-BF64-61527EDF6544} = {0B31CB6F-77F8-4F83-A064-92DDEE741FC4}
-		{3FCBC919-489D-459E-BDBD-0709914F82EE} = {ECB334BA-0BD5-47E8-B92F-E93E26ADD04C}
+		{828B4250-9C0F-4AE2-B18C-FA36AC5D4FD9} = {ECB334BA-0BD5-47E8-B92F-E93E26ADD04C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEED0F0A-C5A8-4158-8726-26E24FB10C35}

@@ -1,0 +1,12 @@
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\bin\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.deps.json
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\bin\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\bin\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.csproj.AssemblyReference.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.AssemblyInfoInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.AssemblyInfo.cs
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.csproj.CoreCompileInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\refint\ApiDevsuCMunoz.Infrastructure.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ApiDevsuCMunoz.Infrastructure.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Infraestructure\obj\Debug\net6.0\ref\ApiDevsuCMunoz.Infrastructure.dll

@@ -1,0 +1,15 @@
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\bin\Debug\net6.0\ApiDevsuCMunoz.Data.deps.json
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\bin\Debug\net6.0\ApiDevsuCMunoz.Data.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\bin\Debug\net6.0\ApiDevsuCMunoz.Data.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.csproj.AssemblyReference.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.AssemblyInfoInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.AssemblyInfo.cs
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.csproj.CoreCompileInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.csproj.CopyComplete
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\refint\ApiDevsuCMunoz.Data.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ApiDevsuCMunoz.Data.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Data\obj\Debug\net6.0\ref\ApiDevsuCMunoz.Data.dll

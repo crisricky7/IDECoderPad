@@ -1,0 +1,12 @@
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.deps.json
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\bin\Debug\net6.0\ApiDevsuCMunoz.Domain.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ApiDevsuCMunoz.Domain.csproj.AssemblyReference.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ApiDevsuCMunoz.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ApiDevsuCMunoz.Domain.AssemblyInfoInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ApiDevsuCMunoz.Domain.AssemblyInfo.cs
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ApiDevsuCMunoz.Domain.csproj.CoreCompileInputs.cache
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ApiDevsuCMunoz.Domain.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\refint\ApiDevsuCMunoz.Domain.dll
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ApiDevsuCMunoz.Domain.pdb
+D:\GIT\IDECoderPad\Devsu\ApiDevsuCMunoz\ApiDevsuCMunoz.Domain\obj\Debug\net6.0\ref\ApiDevsuCMunoz.Domain.dll
