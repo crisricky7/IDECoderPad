@@ -19,7 +19,6 @@ namespace ApiDevsuCMunoz.Api.Controllers
         {
             _mediator = mediator;
         }
-        // GET api/<CuentaController>/5
         [HttpGet("{numero}", Name = "GetNumCuentas")]
         [ProducesResponseType(typeof(IEnumerable<CuentasVM>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<CuentasVM>>> GetCuentasCuentaID(long numero)
@@ -36,7 +35,6 @@ namespace ApiDevsuCMunoz.Api.Controllers
             }
         }
 
-        // POST api/<CuentaController>
         [HttpPost(Name = "CreateCuenta")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<long>> CreateCuenta([FromBody] CreateCuentasCommand command)
@@ -51,7 +49,6 @@ namespace ApiDevsuCMunoz.Api.Controllers
             }
         }
 
-        // PUT api/<CuentaController>/5
         [HttpPut(Name = "UpdateCuenta")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -69,7 +66,6 @@ namespace ApiDevsuCMunoz.Api.Controllers
             }
         }
 
-        // DELETE api/<CuentaController>/5
         [HttpDelete("{numero}", Name = "DeleteCuenta")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

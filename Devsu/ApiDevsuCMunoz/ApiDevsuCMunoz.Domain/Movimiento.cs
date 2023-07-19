@@ -8,6 +8,7 @@ namespace ApiDevsuCMunoz.Domain
         public decimal Valor { get; set; }
         public decimal Saldo { get; set; }
         public long? CuentaNumero { get; set; }
+        public DateTime? Fecha { get; set; }=DateTime.Now;
         public virtual Cuenta? Cuenta { get; set; }
 
     }

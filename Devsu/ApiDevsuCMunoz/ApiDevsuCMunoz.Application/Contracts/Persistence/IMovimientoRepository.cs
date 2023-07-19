@@ -1,12 +1,13 @@
-﻿using ApiDevsuCMunoz.Domain;
+﻿using ApiDevsuCMunoz.Application.Models;
+using ApiDevsuCMunoz.Domain;
 
 namespace ApiDevsuCMunoz.Application.Contracts.Persistence
 {
     public interface IMovimientoRepository : IAsyncRepository<Movimiento>
     {
-        Task<ResultadosAPI> RegistraTransaccion(long numCuenta, string tipo, decimal valor);
-        Task<ResultadosAPI> ValidarSaldo(long numCuenta, decimal valor);
-        Task<ResultadosAPI> ValidarCupoDiario(long numCuenta, decimal valor);
+        Task<RespuestaValidacionMovimientos> RegistraTransaccion(Movimiento movimiento);
+        RespuestaValidacionMovimientos ValidarSaldo(Movimiento movimiento);
+        RespuestaValidacionMovimientos ValidarCupoDiario(Movimiento movimiento);
         List<Movimiento> GetAllMovimientos(long numCuenta);
 
 

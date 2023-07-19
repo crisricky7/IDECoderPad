@@ -24,8 +24,8 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Queries.GetMovimientos
 
             List<Movimiento> movimiento = new List<Movimiento>();
 
-            foreach (var movimientoVM in movimientoList)
-            movimiento.Add(movimientoVM);
+            foreach (var Movimiento in movimientoList)
+            movimiento.Add(Movimiento);
 
             return _mapper.Map<List<MovimientosVM>>(movimiento);
         }

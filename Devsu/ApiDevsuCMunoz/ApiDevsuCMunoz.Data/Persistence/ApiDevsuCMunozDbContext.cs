@@ -33,6 +33,9 @@ namespace ApiDevsuCMunoz.Infrestructure.Persistence
                 .HasForeignKey(m => m.CuentaNumero)
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Movimiento>()
+                .ToTable(tb => tb.HasTrigger("trgAfterInsertMovimientosCreditos"))
+                .ToTable(tb => tb.HasTrigger("trgAfterInsertMovimientosDebitos"));
         }
 
         public DbSet<Cliente>? Clientes { get; set; }

@@ -1,4 +1,6 @@
 ﻿using ApiDevsuCMunoz.Application.Contracts.Persistence;
+using ApiDevsuCMunoz.Application.Features.Movimientos.VModels;
+using ApiDevsuCMunoz.Application.Models;
 using ApiDevsuCMunoz.Domain;
 using AutoMapper;
 using MediatR;
@@ -6,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace ApiDevsuCMunoz.Application.Features.Movimientos.Commands.CreateMovimiento
 {
-    public class CreateMovimientoCommandHandler : IRequestHandler<CreateMovimientoCommand, long>
+    public class CreateMovimientoCommandHandler : IRequestHandler<CreateMovimientoCommand, RespuestaTransaccionMovimiento>
     {
         private readonly IMovimientoRepository _movimientoRepository;
         private readonly IMapper _mapper;
@@ -19,13 +21,32 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Commands.CreateMovimie
             _logger = logger;
         }
 
-        public async Task<long> Handle(CreateMovimientoCommand request, CancellationToken cancellationToken)
+        public async Task<RespuestaTransaccionMovimiento> Handle(CreateMovimientoCommand request, CancellationToken cancellationToken)
         {
             var movimientoEntity = _mapper.Map<Movimiento>(request);
-            var newMovimiento = await _movimientoRepository.AddAsync(movimientoEntity);
-            _logger.LogInformation($"Movimiento {newMovimiento.Id} fue creado correctamente.");
-
-            return newMovimiento.Id;
+            var respuesta = await _movimientoRepository.RegistraTransaccion(movimientoEntity);
+            if (respuesta.Status.Equals("OK")){
+                var newMovimiento = await _movimientoRepository.AddAsync(respuesta.Movimiento);
+                //var movimientoR = _mapper.Map<Movimiento>(newMovimiento);
+                //respuesta.Movimiento = movimientoR;
+                
+                _logger.LogInformation($"Movimiento {newMovimiento.Id} fue creado correctamente.");
+                return new RespuestaTransaccionMovimiento
+                {
+                    Status = respuesta.Status,
+                    Message = respuesta.Message,
+                    Movimiento = _mapper.Map<MovimientosVM>(newMovimiento)
+                };
+            }
+            else {
+                return new RespuestaTransaccionMovimiento
+                {
+                    Status = respuesta.Status,
+                    Message = respuesta.Message,
+                    Movimiento = null
+                };
+            }
+            
         }
     }
 }

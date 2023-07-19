@@ -3,6 +3,7 @@ using ApiDevsuCMunoz.Application.Features.Movimientos.Commands.DeleteMovimiento;
 using ApiDevsuCMunoz.Application.Features.Movimientos.Commands.UpdateMovimiento;
 using ApiDevsuCMunoz.Application.Features.Movimientos.Queries.GetMovimientosList;
 using ApiDevsuCMunoz.Application.Features.Movimientos.VModels;
+using ApiDevsuCMunoz.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -19,6 +20,7 @@ namespace ApiDevsuCMunoz.Api.Controllers
         {
             _mediator = mediator;
         }
+        
         [HttpGet("{CuentaNumero}", Name = "GetMovimiento")]
         [ProducesResponseType(typeof(IEnumerable<MovimientosVM>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<MovimientosVM>>> GetMovimientosID(long CuentaNumero)
@@ -29,21 +31,21 @@ namespace ApiDevsuCMunoz.Api.Controllers
                 var movimientos = await _mediator.Send(query);
                 return Ok(movimientos);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
             }
         }
 
         [HttpPost(Name = "CreateMovimiento")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
-        public async Task<ActionResult<long>> CreateCuenta([FromBody] CreateMovimientoCommand command)
+        [ProducesResponseType(typeof(RespuestaTransaccionMovimiento),(int)HttpStatusCode.OK)]
+        public async Task<ActionResult<RespuestaTransaccionMovimiento>> CreateMovimiento([FromBody] CreateMovimientoCommand command)
         {
             try
             { 
                 return await _mediator.Send(command);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
             }
@@ -60,7 +62,7 @@ namespace ApiDevsuCMunoz.Api.Controllers
                 await _mediator.Send(command);
                 return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
             }
@@ -81,7 +83,7 @@ namespace ApiDevsuCMunoz.Api.Controllers
                 await _mediator.Send(command);
                 return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
             }

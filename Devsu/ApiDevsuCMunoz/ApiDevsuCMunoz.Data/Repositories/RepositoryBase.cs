@@ -4,6 +4,7 @@ using ApiDevsuCMunoz.Domain.Common;
 using ApiDevsuCMunoz.Infrestructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
+using System.Transactions;
 
 namespace ApiDevsuCMunoz.Infrastructure.Repositories
 {
@@ -32,10 +33,18 @@ namespace ApiDevsuCMunoz.Infrastructure.Repositories
         }
 
         public async Task<T> AddAsync(T entity)
-        {
-            _context.Set<T>().Add(entity);
-            await _context.SaveChangesAsync();
-            return entity;
+        {   
+            try
+            {
+                _context.Set<T>().Add(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+                return null;
+            }
         }
 
         public async Task<T> UpdateAsync(T entity)
