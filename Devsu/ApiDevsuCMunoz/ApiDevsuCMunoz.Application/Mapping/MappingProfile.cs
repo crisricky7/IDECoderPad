@@ -1,4 +1,5 @@
-﻿using ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente;
+﻿using ApiDevsuCMunoz.Application.Features.Clientes.Commands;
+using ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente;
 using ApiDevsuCMunoz.Application.Features.Clientes.VModels;
 using ApiDevsuCMunoz.Application.Features.Cuentas.Commands.CreateCuentas;
 using ApiDevsuCMunoz.Application.Features.Cuentas.Commands.UpdateCuentas;
@@ -17,6 +18,8 @@ namespace ApiDevsuCMunoz.Application.Mapping
         {
             CreateMap<Cliente, ClientesVM>();
             CreateMap<ClientesVM,Cliente>();
+            CreateMap<CreateClienteCommand, Cliente>();
+            CreateMap<Cliente, CreateClienteCommand>();
             CreateMap<UpdateClienteCommand, Cliente>();
             CreateMap<Cliente, UpdateClienteCommand>();
             

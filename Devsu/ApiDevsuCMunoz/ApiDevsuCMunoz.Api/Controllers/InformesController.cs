@@ -17,7 +17,7 @@ namespace ApiDevsuCMunoz.Api.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("{ClienteID}, {FechaInicio}, {FechaFin}", Name = "GeneraInformeCliente")]
+        [HttpGet("", Name = "GeneraInformeCliente")]
         [ProducesResponseType(typeof(InformeCuentaVM), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<InformeCuentaVM>> GeneraInformeCliente(long ClienteID, string FechaInicio, string FechaFin)
         {

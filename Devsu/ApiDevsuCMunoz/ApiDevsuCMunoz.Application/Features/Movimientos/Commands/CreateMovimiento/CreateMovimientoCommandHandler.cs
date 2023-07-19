@@ -31,7 +31,7 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Commands.CreateMovimie
                 return new RespuestaTransaccionMovimiento
                 {
                     Status = respuesta.Status,
-                    Message = respuesta.Message,
+                    Message = "Movimiento creado correctamente",
                     Movimiento = _mapper.Map<MovimientosVM>(newMovimiento)
                 };
             }

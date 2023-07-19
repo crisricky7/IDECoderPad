@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using ApiDevsuCMunoz.Application.Models;
+using MediatR;
 
 namespace ApiDevsuCMunoz.Application.Features.Movimientos.Commands.UpdateMovimiento
 {
-    public class UpdateMovimientoCommand : IRequest<Unit>
+    public class UpdateMovimientoCommand : IRequest<RespuestaTransaccionMovimiento>
     {
         public long Id { get; set; }
         public string Tipo { get; set; } = string.Empty;
