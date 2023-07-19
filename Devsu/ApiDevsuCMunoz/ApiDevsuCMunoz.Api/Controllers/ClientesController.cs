@@ -3,6 +3,7 @@ using ApiDevsuCMunoz.Application.Features.Clientes.Commands.DeleteCliente;
 using ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente;
 using ApiDevsuCMunoz.Application.Features.Clientes.Queries.GetClientesList;
 using ApiDevsuCMunoz.Application.Features.Clientes.VModels;
+using ApiDevsuCMunoz.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -38,7 +39,7 @@ namespace ApiDevsuCMunoz.Api.Controllers
 
         [HttpPost(Name = "CreateCliente")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        public async Task<ActionResult<long>> CreateCliente([FromBody] CreateClienteCommand command)
+        public async Task<ActionResult<RespuestaTransaccionCliente>> CreateCliente([FromBody] CreateClienteCommand command)
         {
             try 
             { 
@@ -54,12 +55,11 @@ namespace ApiDevsuCMunoz.Api.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public async Task<ActionResult<long>> UpdateCliente([FromBody] UpdateClienteCommand command)
+        public async Task<ActionResult<RespuestaTransaccionCliente>> UpdateCliente([FromBody] UpdateClienteCommand command)
         {
             try 
             { 
-                await _mediator.Send(command);
-                return NoContent();
+                return await _mediator.Send(command);
             }
             catch (Exception ex)
             {
@@ -71,15 +71,15 @@ namespace ApiDevsuCMunoz.Api.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public async Task<ActionResult> DeleteCliente(long id)
+        public async Task<ActionResult<RespuestaTransaccionCliente>> DeleteCliente(long id)
         {
             try
             { 
                 var command = new DeleteClienteCommand() { 
                     Id = id
                 };
-                await _mediator.Send(command);
-                return NoContent();
+                
+                return await _mediator.Send(command);
             }
             catch (Exception ex)
             {

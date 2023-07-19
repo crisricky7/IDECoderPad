@@ -19,7 +19,7 @@ namespace ApiDevsuCMunoz.Infrastructure.Repositories
             return _context!.Movimientos!.Where(x => x.CuentaNumero == numCuenta).ToList();
         }
 
-        public async Task<RespuestaValidacionMovimientos> RegistraTransaccion(Movimiento movimiento)
+        public async Task<RespuestaValidacionMovimientos> ValidaTransaccion(Movimiento movimiento)
         {
             try
             {

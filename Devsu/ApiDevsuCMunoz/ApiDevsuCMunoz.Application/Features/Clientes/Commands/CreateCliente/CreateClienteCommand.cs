@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using ApiDevsuCMunoz.Application.Models;
+using MediatR;
 
 namespace ApiDevsuCMunoz.Application.Features.Clientes.Commands
 {
-    public class CreateClienteCommand : IRequest<long>
+    public class CreateClienteCommand : IRequest<RespuestaTransaccionCliente>
     {
         public string Nombre { get; set; } = string.Empty;
         public string Genero { get; set; } = string.Empty;

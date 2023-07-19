@@ -18,6 +18,8 @@ namespace ApiDevsuCMunoz.Application.Mapping
         {
             CreateMap<Cliente, ClientesVM>();
             CreateMap<ClientesVM,Cliente>();
+            CreateMap<CreateClienteCommand, Cliente>();
+            CreateMap<Cliente, CreateClienteCommand>();
             CreateMap<UpdateClienteCommand, Cliente>();
             CreateMap<Cliente, UpdateClienteCommand>();
             
@@ -34,6 +36,11 @@ namespace ApiDevsuCMunoz.Application.Mapping
             CreateMap<Movimiento, CreateMovimientoCommand>();
             CreateMap<UpdateMovimientoCommand, MovimientosVM>();
             CreateMap<MovimientosVM, UpdateMovimientoCommand>();
+
+            CreateMap<DetalleCuentaVM, Cuenta>();
+            CreateMap<Cuenta, DetalleCuentaVM>();
+            CreateMap<DetalleMovimientosVM,Movimiento>();
+            CreateMap<Movimiento, DetalleMovimientosVM>();
         }
     }
 }

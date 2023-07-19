@@ -18,6 +18,7 @@ namespace ApiDevsuCMunoz.Infrastructure
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<ICuentaRepository, CuentaRepository>();
             services.AddScoped<IMovimientoRepository, MovimientoRepository>();
+            services.AddScoped<IInformeRepository, InformeRepository>();
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>));
 
             return services;

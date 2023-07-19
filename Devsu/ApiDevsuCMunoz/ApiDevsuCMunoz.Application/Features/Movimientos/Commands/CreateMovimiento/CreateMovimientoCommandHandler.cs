@@ -24,17 +24,14 @@ namespace ApiDevsuCMunoz.Application.Features.Movimientos.Commands.CreateMovimie
         public async Task<RespuestaTransaccionMovimiento> Handle(CreateMovimientoCommand request, CancellationToken cancellationToken)
         {
             var movimientoEntity = _mapper.Map<Movimiento>(request);
-            var respuesta = await _movimientoRepository.RegistraTransaccion(movimientoEntity);
+            var respuesta = await _movimientoRepository.ValidaTransaccion(movimientoEntity);
             if (respuesta.Status.Equals("OK")){
                 var newMovimiento = await _movimientoRepository.AddAsync(respuesta.Movimiento);
-                //var movimientoR = _mapper.Map<Movimiento>(newMovimiento);
-                //respuesta.Movimiento = movimientoR;
-                
                 _logger.LogInformation($"Movimiento {newMovimiento.Id} fue creado correctamente.");
                 return new RespuestaTransaccionMovimiento
                 {
                     Status = respuesta.Status,
-                    Message = respuesta.Message,
+                    Message = "Movimiento creado correctamente",
                     Movimiento = _mapper.Map<MovimientosVM>(newMovimiento)
                 };
             }

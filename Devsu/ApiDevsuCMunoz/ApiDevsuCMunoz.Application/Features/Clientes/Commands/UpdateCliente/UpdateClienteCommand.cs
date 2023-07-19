@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using ApiDevsuCMunoz.Application.Models;
+using MediatR;
 
 namespace ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente
 {
-    public class UpdateClienteCommand : IRequest<Unit>
+    public class UpdateClienteCommand : IRequest<RespuestaTransaccionCliente>
     {
         public long Id { get; set; } 
         public string Nombre { get; set; } = string.Empty;
