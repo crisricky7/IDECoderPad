@@ -1,5 +1,4 @@
-﻿using ApiDevsuCMunoz.Application.Features.Clientes.Commands;
-using ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente;
+﻿using ApiDevsuCMunoz.Application.Features.Clientes.Commands.UpdateCliente;
 using ApiDevsuCMunoz.Application.Features.Clientes.VModels;
 using ApiDevsuCMunoz.Application.Features.Cuentas.Commands.CreateCuentas;
 using ApiDevsuCMunoz.Application.Features.Cuentas.Commands.UpdateCuentas;
@@ -34,6 +33,11 @@ namespace ApiDevsuCMunoz.Application.Mapping
             CreateMap<Movimiento, CreateMovimientoCommand>();
             CreateMap<UpdateMovimientoCommand, MovimientosVM>();
             CreateMap<MovimientosVM, UpdateMovimientoCommand>();
+
+            CreateMap<DetalleCuentaVM, Cuenta>();
+            CreateMap<Cuenta, DetalleCuentaVM>();
+            CreateMap<DetalleMovimientosVM,Movimiento>();
+            CreateMap<Movimiento, DetalleMovimientosVM>();
         }
     }
 }

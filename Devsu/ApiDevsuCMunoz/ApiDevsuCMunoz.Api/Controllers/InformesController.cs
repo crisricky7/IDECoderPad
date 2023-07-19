@@ -1,5 +1,8 @@
-﻿using MediatR;
+﻿using ApiDevsuCMunoz.Application.Features.Informes.Queries.GetInformeFecha;
+using ApiDevsuCMunoz.Application.Features.Informes.VModels;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace ApiDevsuCMunoz.Api.Controllers
 {
@@ -14,10 +17,20 @@ namespace ApiDevsuCMunoz.Api.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{ClienteID}, {FechaInicio}, {FechaFin}", Name = "GeneraInformeCliente")]
+        [ProducesResponseType(typeof(InformeCuentaVM), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<InformeCuentaVM>> GeneraInformeCliente(long ClienteID, string FechaInicio, string FechaFin)
         {
-            return "value";
+            try
+            {
+                var query = new GetInformeFechaListQuery(ClienteID, FechaInicio, FechaFin);
+                var informe = await _mediator.Send(query);
+                return Ok(informe);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocurrió un error en el servidor.");
+            }
         }
 
     }

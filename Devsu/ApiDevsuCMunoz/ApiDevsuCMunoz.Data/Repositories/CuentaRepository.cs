@@ -14,15 +14,6 @@ namespace ApiDevsuCMunoz.Infrastructure.Repositories
             _context = context;
         }
 
-        public Task<List<Cuenta>> GetClienteByCuentas(string identificacion)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<InformeCuenta> GetInformeCuentas(string identificacion)
-        {
-            throw new NotImplementedException();
-        }
         public bool ValidaMovimientosAsync(Cuenta entity) {
 
              return _context!.Movimientos!.Where(x => x.CuentaNumero == entity.Numero).Count()>0;
